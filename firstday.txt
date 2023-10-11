@@ -1,0 +1,34 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+ cout << " \t\t PRIME NUMBER APPLICATION \n\n";
+
+int a ,b ;
+       bool isPrime =true ;
+cout << "Enter a No. \n";
+
+cin>>a;
+for(int i=2 ;i<=a/2 ;i++){
+    if(a%i ==0){
+        isPrime =false ;
+    }
+    
+}
+if(isPrime)
+     {
+         cout<< a <<" is a prime no.";
+         
+     }
+     else{
+         cout<< a <<" is not a prime no.";
+         
+     }
+  
+
+ 
+
+
+    return 0;
+}
