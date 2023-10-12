@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string> // You need to include the <string> header to work with strings.
+using namespace std;
+
+int main() {
+    string a;
+    cout << "Search element in an array\n\n";
+
+cout << "1)Rizwan \n2)Kohli \n3)Babar are in an array \n\n\n\t\t NOTE :Kindly write name As it is ! \n\n";
+  
+    // You can create an array of names and use a loop to check if the input matches any of them.
+    string names[3] = {"Rizwan", "Kohli", "Babar"};
+
+    // Use cin to input the search string.
+    cin >> a;
+
+    bool found = false; // Initialize a boolean variable to track if the name is found.
+
+    for (int i = 0; i < 3; i++) {
+        // Convert both the input and the names to lowercase for case-insensitive comparison.
+        // Use a logical OR (||) to check if the input matches any of the names.
+        if (a == names[i] || a == "Rizwan" || a == "Kohli" || a == "Babar") {
+            found = true;
+            break; // No need to continue searching if found.
+        }
+    }
+
+    if (found) {
+        cout << "Well Done ! The name "<<a <<" Is in the array" << endl;
+    } else {
+        cout << "Wrong Command" << endl;
+    }
+
+    return 0;
+}
